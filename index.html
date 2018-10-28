@@ -535,10 +535,10 @@
                     //text("Thanks for playing!", 200, 200);
                     over.display(0,0);
                     text("SCORE: " + score, 225, 400);
-                    if (score > highscore) {
+                    if (score < highscore) {
                         highscore = score;
                     } else {
-                        text("HIGH SCORE: " + highscore, 225, 435);
+                        text("LOW SCORE: " + highscore, 225, 435);
                     }
 
                     //text("PRESS S TO RESTART", 200, 300);
